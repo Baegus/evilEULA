@@ -1,0 +1,69 @@
+::-webkit-scrollbar {
+	width: 16px;
+	position: relative;
+	z-index: 10;
+}
+
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-button:single-button {
+	border: 1px solid #424242;
+	border-left-color: #d6d6ce;
+	border-top-color: #d6d6ce;
+	background-color: #ded6ce;
+	box-shadow: inset 1px 1px white,
+				inset -1px -1px #848484;
+}
+
+::-webkit-scrollbar-track {
+	background: url("img/checker.png") repeat #d6d6ce;
+}
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+	display: block;
+	border-style: solid;
+	height: 16px;
+	width:  16px;
+	box-sizing: border-box;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+	background-image: url("img/up.png");
+}
+
+//  Down 
+::-webkit-scrollbar-button:single-button:vertical:increment {
+	background-image: url("img/down.png");
+}
+
+// ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+// 	border-color: #777777 transparent transparent transparent;
+// }
+
+.eula {
+	display: flex;
+	flex-direction: column;
+}
+
+textarea {
+	font-size: 10px;
+	font-family: "Arial",sans-serif;
+	background: white;
+	resize: none;
+	overflow-y: scroll;
+	height: 100%;
+	outline: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	border: 1px solid white;
+	border-top-color: #424242;
+	border-left-color: #424242;
+	box-shadow: -1px -1px #848484,
+				inset -1px -1px #ded6ce;
+}
+#original {
+	user-select: none;
+}

@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	// background: url("insp.png") no-repeat;
+	background-color: #008080;
+	background-position: left top;
+	font-family: "Arial",sans-serif;
+}
+
+.window,
+button {
+	background: #ded6ce;
+	border-top-color: white;
+	border-left-color: white;
+	border-right-color: #424242;
+	border-bottom-color: #424242;
+	border-style: solid;
+}
+
+.window {
+	position: relative;
+	box-sizing: border-box;
+	top:  90px;
+	left: 110px;
+	// left: 483px;
+	width:  483px;
+	height: 357px;
+	border-width: 2px;
+	border-top-color: white;
+	border-right-color: #424242;
+	border-left-color: white;
+	border-bottom-color: #424242;
+	.content {
+		position: relative;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 17px 7px 9px 14px;
+		height: calc(100% - 18px);
+	}
+}
+
+button {
+	font-size: 12px;
+	text-align: center;
+	border-radius: 0px;
+	user-select: none;
+	appearance: none;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	border-width: 1px;
+	box-shadow: inset -1px -1px #848484;
+	&.close {
+		background-image: url("img/close.png");
+	}
+	&[disabled] {
+		color: #808080;
+		text-shadow: 1px 1px 0 white;
+	}
+}
+.hl {
+	text-decoration: underline;
+}
+
+.main {
+	display: flex;
+	position: relative;
+	height: calc(100% - 47px);
+	.image {
+		width: 122px;
+		height: 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-right: 11px;
+		border: 1px solid #848484;
+		border-right-color: white;
+		border-bottom-color: white;
+		background: url("img/installer.png") no-repeat #008484;
+		background-position: center 36%;
+	}
+	p {
+		font-size: 11px;
+		user-select: none;
+		margin: 7px 0;
+
+	}
+}
+
+@import "titleBar";
+@import "textarea";
+@import "bottom";

@@ -1,0 +1,27 @@
+.bottom {
+	height: 36px;
+	padding: 9px;
+	padding-bottom: 0;
+	padding-top: 13px;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+	hr {
+		position: absolute;
+		width: 96%;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: 0 auto 0px 1%;
+		border-bottom-color: white;
+		border-right-color: white;
+	}
+	button {
+		width: 74px;
+		height: 100%;
+	}
+	#yes {
+		margin-right: 5px;
+	}
+}

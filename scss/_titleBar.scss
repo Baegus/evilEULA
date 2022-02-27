@@ -1,0 +1,41 @@
+.titleBar {
+	&, > div {
+		display: flex;
+		align-items: center;
+		position: relative;
+		box-sizing: border-box;
+	}
+	justify-content: space-between;
+	height: 18px;
+	user-select: none;
+	font-size: 11px;
+	font-weight: 700;
+	color: white;
+	padding: 0 3px;
+	background: linear-gradient(
+		to right,
+		#08296b 0%,
+		#adcef7 100%
+	);
+	> div {
+		height: 100%;
+		box-sizing: border-box;
+
+	}
+	button {
+		padding: 0;
+		width:  16px;
+		height: 14px;
+		background-repeat: no-repeat;
+		background-size: 16px 14px;
+		background-position: center;
+	}
+}
+
+.icon {
+	width:  16px;
+	height: 16px;
+	background: url("img/icon.png") no-repeat;
+	margin-right: 1px;
+	position: relative;
+}
