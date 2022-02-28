@@ -123,7 +123,7 @@ IMPORTANT-READ CAREFULLY: This End-User License Agreement ("EULA") is a legal ag
 			*/
 		});
 
-		const blockedEvents = ["copy","cut","paste"];
+		const blockedEvents = ["copy","cut","paste","drag","drop"];
 		blockedEvents.forEach(function(ev) {
 			original.addEventListener(ev,function(e) {e.preventDefault();});
 			transcribed.addEventListener(ev,function(e) {e.preventDefault();});
